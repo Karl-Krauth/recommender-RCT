@@ -19,15 +19,14 @@ deploy:
   region: us-west-1
   app: GuardianAI
   env: Guardianai-env
-  on:
-    branches:
-      only:
-        - main
   access_key_id:
     secure: XDx0/bt6G/SgF47P82KPI+496Ultl7j/77i3dW6UoUMEicOV7W29ujaFOdwY60ILufpMDkJpz5fieKzi0jgECxN9+5hreiUglQJ1tGr7i+2bnYo7RN0pm2wP9vsi+pwnu/LZo6J8cJZNFhnPF6usFMimWrY6W+/6M0Atl7hNvQQ8CAZQcrBJA6BWrzEgPYFGEwT4DIUf4ZOLRbuzMp/AaeeQi9JHgEHna6xyAMihWNunqjlsOhSLZ3slnZNDum3XglwHnTGPCeoNknYzeOLjvkbRo48HW6L6ZXm0ao6VFc2ywLm3w3J+4KUIE8SrpU/Jt9JIgPGlMVUSU0W8Mg82pYcCkjj0mIR4xthWbjb5+JMQYH/3Xh/X/UWdmmL4CjApHUk5lsCj4NmWWLOJcATQy8Bs20iS7Loz1X7IVPKSKrZ+gHd/NaWt49iytQcnt9rsAQbFjgYbudrSsQlc+uxf2kdwP3dapp9pM+lqL5twAcdv8Jl5u43mWu//cywoOU0y5tDeUSwbyORTdXANavxM3/Xks6D0BO8TRrvV/sG1yqbOYG/kj/OQnGq+4QyeXQSDXxs8AC9gHzPBMC9djNrcTK0/+m5GzHGICGl9G9auNMP5Jh5WNKTrWaEh64lLQXZ9SIRHg1zjMLiBF+IRgift/Vqgjk0SgoxAgmdWWpY2Qt8=
   secret_access_key:
     secure: S1roO5DZzieHDXmQdbqHsneDybShNKh9+lnzdxnOeblDCaYcMtzbU3+QXmlcVgT9gUXq+PXnOzIKwKSmqy+13Ej5NbK9meGwnIkyeHNhyY9rMAcpTWeLKT5Ljg4fn8IzbvRGyv2qsmVRkxLvDtLlgq8USKryd+v/I3xhYNnvHN3SVcdgOGU8Wf/s61wnqQrFkjmMbGFBr3ENKzdp7EyR8hXm4A7sF2dsNflxZL5o0iZcAnP2vDAEeOD6M++UK7NKcWnIRl/ZUKPDqjY/L1lkVigp+AYtQ7YPVpCCeJJhiv+vFo6pGjIBMU94cFzooTyNtmYarHjukFxRFBNRChIcSR1ymgM32KC/lr+cYnC3JFow/rnKD2017JP60QGC6mmHPDMes57inirdykmPfZnABXxEyV+iCu0nMapH6sFDcrTHyINxWNEfTjlPCxF1vU5Kk1VFZTsFhQDe/rF7ZlvNRkLE5jGJac0FcoA1eJ+EtEzefn/AaV7g6DsIvuGzDEgnmQkUjnRxZDYHl4wu7wlT0jRAPQLP9JhNhLgjaUrvJVLZBloi0fH4jNWX4TC+ANtxIDTEi8SkdEA4vJ3ZQU2PT5ITamZzK12v943oZItd7f7AVxMMsp3pKfPVDW9lW9iJAarrBaezFnvA/CYIWGT7Ur/X/cRpEWJe4Af1x0UhNmo=
   bucket: elasticbeanstalk-us-west-1-470275863094
+  branches:
+    only:
+      - main
   edge: true
 notifications:
   email: false
