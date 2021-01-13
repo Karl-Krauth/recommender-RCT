@@ -24,9 +24,8 @@ deploy:
   secret_access_key:
     secure: S1roO5DZzieHDXmQdbqHsneDybShNKh9+lnzdxnOeblDCaYcMtzbU3+QXmlcVgT9gUXq+PXnOzIKwKSmqy+13Ej5NbK9meGwnIkyeHNhyY9rMAcpTWeLKT5Ljg4fn8IzbvRGyv2qsmVRkxLvDtLlgq8USKryd+v/I3xhYNnvHN3SVcdgOGU8Wf/s61wnqQrFkjmMbGFBr3ENKzdp7EyR8hXm4A7sF2dsNflxZL5o0iZcAnP2vDAEeOD6M++UK7NKcWnIRl/ZUKPDqjY/L1lkVigp+AYtQ7YPVpCCeJJhiv+vFo6pGjIBMU94cFzooTyNtmYarHjukFxRFBNRChIcSR1ymgM32KC/lr+cYnC3JFow/rnKD2017JP60QGC6mmHPDMes57inirdykmPfZnABXxEyV+iCu0nMapH6sFDcrTHyINxWNEfTjlPCxF1vU5Kk1VFZTsFhQDe/rF7ZlvNRkLE5jGJac0FcoA1eJ+EtEzefn/AaV7g6DsIvuGzDEgnmQkUjnRxZDYHl4wu7wlT0jRAPQLP9JhNhLgjaUrvJVLZBloi0fH4jNWX4TC+ANtxIDTEi8SkdEA4vJ3ZQU2PT5ITamZzK12v943oZItd7f7AVxMMsp3pKfPVDW9lW9iJAarrBaezFnvA/CYIWGT7Ur/X/cRpEWJe4Af1x0UhNmo=
   bucket: elasticbeanstalk-us-west-1-470275863094
-  branches:
-    only:
-      - main
+  on:
+    branch: main
   edge: true
 notifications:
   email: false
