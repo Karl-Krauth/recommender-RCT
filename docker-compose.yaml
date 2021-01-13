@@ -1,0 +1,19 @@
+version: "3"
+services:
+  api:
+    build: backend/api
+    environment:
+      - DEBUG
+    image: guardianai/api
+    ports: ['5000:5000']
+    volumes: ['./backend/api:/app']
+  db:
+    container_name: 'database'
+    environment:
+      POSTGRES_USER: 'user'
+      POSTGRES_PASSWORD: 'password'
+    image: 'postgres:11'
+    ports: ['5432:5432']
+    volumes: ['dbdata:/var/lib/postgresql/data']
+volumes:
+  dbdata:
